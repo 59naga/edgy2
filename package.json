@@ -15,6 +15,7 @@
   "dependencies": {
     "express": "^4.13.1",
     "kuromoji": "0.0.2",
+    "romanizer": "0.0.0-alpha",
     "soysauce": "0.1.0-rc.1"
   },
   "extraDependencies": {

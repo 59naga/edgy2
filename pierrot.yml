@@ -10,6 +10,10 @@ apps:
     from: kuromoji.berabou.me
     to: 59803
 
+  romanize:
+    from: romanize.berabou.me
+    to: 59804
+
   npm:
     repo: https://github.com/59naga/npm.berabou.me.git
     from: npm.berabou.me
