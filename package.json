@@ -15,7 +15,7 @@
   "dependencies": {
     "express": "^4.13.1",
     "kuromoji": "0.0.2",
-    "soysauce": "0.0.5"
+    "soysauce": "0.1.0-rc.1"
   },
   "extraDependencies": {
     "bouncy": "^3.2.2",
