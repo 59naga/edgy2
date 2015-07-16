@@ -1,0 +1,28 @@
+{
+  "name": "edgy",
+  "private": true,
+
+  "scripts": {
+    "start": "pierrot apps",
+    "vhost": "pierrot vhost",
+    "pm2": "pierrot pm2",
+
+    "backup": "export NOW=$(date '+%Y%m%d-%H%M%S') && npm run backup-sql && npm run backup-zip && npm run backup-clean",
+    "backup-sql": "mysqldump edgy_test -u root -h localhost --compress -r apps/edgy.black.sql",
+    "backup-zip": "cd apps && zip -r ../backups/$NOW edgy.black/storage edgy.black.sql",
+    "backup-clean": "rm apps/edgy.black.sql"
+  },
+  "dependencies": {
+    "express": "^4.13.1",
+    "kuromoji": "0.0.2",
+    "soysauce": "0.0.5"
+  },
+  "extraDependencies": {
+    "bouncy": "^3.2.2",
+    "pierrot": "59naga/pierrot",
+    "pm2": "^0.14.3"
+  },
+
+  "author": "59naga <i59naga@icloud.com> (http://berabou.me)",
+  "license": "MIT"
+}

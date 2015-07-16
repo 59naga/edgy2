@@ -1,0 +1,7 @@
+{
+  "apps": [
+    "backup"
+  ],
+  "task": "update",
+  "really": true
+}

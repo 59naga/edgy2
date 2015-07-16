@@ -1,0 +1,48 @@
+apps:
+  backup: {}
+
+  nicolive:
+    repo: https://github.com/59naga/nicolive.berabou.me.git
+    from: nicolive.berabou.me
+    to: 59802
+
+  kuromoji:
+    from: kuromoji.berabou.me
+    to: 59803
+
+  npm:
+    repo: https://github.com/59naga/npm.berabou.me.git
+    from: npm.berabou.me
+    to: 59801
+
+  turnout:
+    repo: https://github.com/59naga/turnout.berabou.me.git
+    from: turnout.berabou.me
+    to: 59799
+
+  soysauce:
+    from: soysauce.berabou.me
+    to: 59800
+
+  berabou.me:
+    repo: https://github.com/59naga/berabou.me.git
+    from: berabou.me
+    to: 59798
+
+  static:
+    from: static.edgy.black
+    to: 59000
+
+  edgy:
+    repo: https://github.com/59naga/edgy.black.git
+    from: edgy.black
+    to: 59001
+    env:
+      DB: localhost:3306
+      PUBLIC_URL: http://edgy.black/
+      MYPAGE_HOST: edgy.website
+
+  edgy.website:
+    wildcard: true
+    from: edgy.website
+    to: 59001
