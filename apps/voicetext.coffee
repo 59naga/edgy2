@@ -32,6 +32,7 @@ app.get '/',(req,res)->
 app.get '/:words',(req,res)->
   return res.status(414).end '生成可能なボイスは200文字までです。' if req.params.words.length > 200
 
+  req.query.speaker?= 'hikari'
   voiceText= new VoiceText process.env.VOICETEXTAPIKEY
   for parameter in availableParameters when parameter isnt 'format'
     voiceText= voiceText[parameter] req.query[parameter] if req.query[parameter]?
@@ -39,6 +40,8 @@ app.get '/:words',(req,res)->
   voiceText.speak req.params.words,(error,buffer)->
     return res.status(500).send error.message if error
 
+    res.set 'Content-type','audio/wav'
+    res.set 'Content-length',buffer.length
     res.send buffer
 
 # Boot
