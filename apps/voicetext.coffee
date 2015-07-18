@@ -42,6 +42,7 @@ app.get '/:words',(req,res)->
 
     res.set 'Content-type','audio/wav'
     res.set 'Content-length',buffer.length
+    res.set 'Last-Modified',(new Date).toGMTString()
     res.send buffer
 
 # Boot
