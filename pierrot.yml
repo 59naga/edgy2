@@ -5,7 +5,6 @@ apps:
     repo: https://github.com/59naga/nicolive.berabou.me.git
     from: nicolive.berabou.me
     to: 59802
-    instances: 0
 
   kuromoji:
     from: kuromoji.berabou.me
@@ -14,6 +13,10 @@ apps:
   romanize:
     from: romanize.berabou.me
     to: 59804
+
+  voicetext:
+    from: voicetext.berabou.me
+    to: 59805
 
   npm:
     repo: https://github.com/59naga/npm.berabou.me.git

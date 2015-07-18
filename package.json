@@ -16,7 +16,8 @@
     "express": "^4.13.1",
     "kuromoji": "0.0.2",
     "romanizer": "0.0.0",
-    "soysauce": "0.1.0-rc.1"
+    "soysauce": "0.1.0-rc.1",
+    "voicetext": "0.0.5"
   },
   "extraDependencies": {
     "bouncy": "^3.2.2",
