@@ -15,7 +15,7 @@
     "kuromoji": "0.0.2",
     "romanizer": "0.0.0",
     "soysauce": "0.1.0-rc.1",
-    "voicetext": "git://github.com/59naga/node-voicetext.git#72baefad1b9b33773a9adccebb8b97b5a712b183"
+    "voice-text": "0.0.0"
   },
   "extraDependencies": {
     "bouncy": "^3.2.2",

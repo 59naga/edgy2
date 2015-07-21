@@ -2,7 +2,7 @@
 express= require 'express'
 path= require 'path'
 
-VoiceText= require 'voicetext'
+VoiceText= (require 'voice-text').VoiceText
 
 # Environment
 process.env.PORT?= 59798
@@ -32,18 +32,19 @@ app.get '/',(req,res)->
 app.get '/:words',(req,res)->
   return res.status(414).end '生成可能なボイスは200文字までです。' if req.params.words.length > 200
 
-  req.query.speaker?= 'hikari'
   voiceText= new VoiceText process.env.VOICETEXTAPIKEY
-  for parameter in availableParameters when parameter isnt 'format'
-    voiceText= voiceText[parameter] req.query[parameter] if req.query[parameter]?
+  for parameter in availableParameters
+    voiceText.set parameter,req.query[parameter] if req.query[parameter]?
 
-  voiceText.speak req.params.words,(error,buffer)->
-    return res.status(500).send error.message if error
-
-    res.set 'Content-type','audio/wav'
+  voiceText.fetchVoice req.params.words
+  .then (buffer)->
+    res.set 'Content-type','audio/aac'
     res.set 'Content-length',buffer.length
     res.set 'Last-Modified',(new Date).toGMTString()
     res.send buffer
+
+  .catch (error)->
+    res.status(500).send error.message
 
 # Boot
 app.listen process.env.PORT
