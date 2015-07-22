@@ -13,7 +13,7 @@
   "dependencies": {
     "express": "^4.13.1",
     "kuromoji": "0.0.2",
-    "romanizer": "0.0.0",
+    "romanizer": "0.0.1-alpha",
     "soysauce": "0.1.0-rc.1",
     "voice-text": "0.0.0"
   },
