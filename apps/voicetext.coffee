@@ -1,7 +1,5 @@
 # Dependencies
 express= require 'express'
-path= require 'path'
-
 VoiceText= (require 'voice-text').VoiceText
 
 # Environment
@@ -27,7 +25,7 @@ app.use (req,res,next)->
   next()
 
 app.get '/',(req,res)->
-  res.end 'powerd by https://github.com/pchw/node-voicetext'
+  res.end 'powerd by https://github.com/59naga/voice-text'
 
 app.get '/:words',(req,res)->
   return res.status(414).end '生成可能なボイスは200文字までです。' if req.params.words.length > 200
