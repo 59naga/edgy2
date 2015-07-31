@@ -24,7 +24,10 @@ app.get '/:words',(req,res)->
   # Move to query to options
   options= {}
   for option in ['limit','concurrency']
-    options[option]= req.query[option]
+    value= req.query[option]|0
+    value= if 0 < value < 100 then value else 1
+
+    options[option]= value
     delete req.query[option]
 
   yahooJp.fetchAll req.query,options
