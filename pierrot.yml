@@ -22,6 +22,10 @@ apps:
     from: yahoo.berabou.me
     to: 59806
 
+  yahoojp:
+    from: yahoojp.berabou.me
+    to: 59807
+
   npm:
     repo: https://github.com/59naga/npm.berabou.me.git
     from: npm.berabou.me
