@@ -23,6 +23,7 @@ apps:
     to: 59806
 
   yahoojp:
+    repo: https://github.com/59naga/yahoojp.berabou.me.git
     from: yahoojp.berabou.me
     to: 59807
 
