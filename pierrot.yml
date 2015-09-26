@@ -1,6 +1,11 @@
 apps:
   backup: {}
 
+  narou:
+    repo: https://github.com/59naga/nicolive.berabou.me.git
+    from: narou.berabou.me
+    to: 59808
+
   nicolive:
     repo: https://github.com/59naga/nicolive.berabou.me.git
     from: nicolive.berabou.me
