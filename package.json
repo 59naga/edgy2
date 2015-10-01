@@ -6,9 +6,9 @@
     "vhost": "pierrot vhost",
     "pm2": "pierrot pm2",
     "backup": "export NOW=$(date '+%Y%m%d-%H%M%S') && npm run backup-sql && npm run backup-zip && npm run backup-clean",
-    "backup-sql": "mysqldump edgy_test -u root -h localhost --compress -r apps/edgy.black.sql",
-    "backup-zip": "cd apps && zip -r ../backups/$NOW edgy.black/storage edgy.black.sql",
-    "backup-clean": "rm apps/edgy.black.sql"
+    "backup-sql": "mysqldump edgy_test -u root -h localhost --compress -r apps/edgy.sql",
+    "backup-zip": "cd apps && zip -r ../backups/$NOW edgy/storage edgy.sql",
+    "backup-clean": "rm apps/edgy.sql"
   },
   "dependencies": {
     "express": "^4.13.1",
