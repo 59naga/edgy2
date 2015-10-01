@@ -1,6 +1,11 @@
 apps:
   backup: {}
 
+  openjtalk:
+    repo: https://github.com/59naga/openjtalk.berabou.me.git
+    from: openjtalk.berabou.me
+    to: 59809
+
   narou:
     repo: https://github.com/59naga/narou.berabou.me.git
     from: narou.berabou.me
