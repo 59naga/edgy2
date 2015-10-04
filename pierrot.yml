@@ -1,6 +1,11 @@
 apps:
   backup: {}
 
+  vpd:
+    repo: https://github.com/59naga/vpd.berabou.me.git
+    from: vpd.berabou.me
+    to: 59810
+
   openjtalk:
     repo: https://github.com/59naga/openjtalk.berabou.me.git
     from: openjtalk.berabou.me
