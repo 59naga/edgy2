@@ -1,6 +1,10 @@
 apps:
   backup: {}
 
+  proxy:
+    from: proxy.berabou.me
+    to: 59811
+
   vpd:
     repo: https://github.com/59naga/vpd.berabou.me.git
     from: vpd.berabou.me
