@@ -1,6 +1,11 @@
 apps:
   backup: {}
 
+  nico:
+    repo: https://github.com/59naga/nico.berabou.me.git
+    from: nico.berabou.me
+    to: 59811
+
   vpd:
     repo: https://github.com/59naga/vpd.berabou.me.git
     from: vpd.berabou.me
