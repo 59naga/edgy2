@@ -1,6 +1,11 @@
 apps:
   backup: {}
 
+  cjsx:
+    repo: https://github.com/59naga/cjsx.berabou.me.git
+    from: cjsx.berabou.me
+    to: 59812
+
   nico:
     repo: https://github.com/59naga/nico.berabou.me.git
     from: nico.berabou.me
