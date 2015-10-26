@@ -1,6 +1,10 @@
 apps:
   backup: {}
 
+  antle:
+    from: antle.red
+    to: 59814
+
   superserver:
     from: superserver.berabou.me
     to: 59813
