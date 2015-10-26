@@ -3,7 +3,7 @@ apps:
 
   superserver:
     from: superserver.berabou.me
-    to: 59812
+    to: 59813
 
   cjsx:
     repo: https://github.com/59naga/cjsx.berabou.me.git
