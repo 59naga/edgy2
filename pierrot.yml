@@ -1,6 +1,10 @@
 apps:
   backup: {}
 
+  superserver:
+    from: superserver.berabou.me
+    to: 59812
+
   cjsx:
     repo: https://github.com/59naga/cjsx.berabou.me.git
     from: cjsx.berabou.me
