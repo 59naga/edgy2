@@ -1,6 +1,11 @@
 apps:
   backup: {}
 
+  img2svg:
+    repo: https://github.com/59naga/img2svg.git
+    from: img2svg.berabou.me
+    to: 59815
+
   antle:
     from: antle.red
     to: 59814
