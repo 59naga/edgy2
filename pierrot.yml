@@ -23,7 +23,7 @@ apps:
 
   vpd:
     from: vpd.berabou.me
-    to: vpd.antle.red
+    to: http://vpd.antle.red
 
   openjtalk:
     repo: https://github.com/59naga/openjtalk.berabou.me.git
