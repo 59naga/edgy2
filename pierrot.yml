@@ -1,3 +1,6 @@
+cert: /etc/letsencrypt/live/berabou.me/cert.pem
+key: /etc/letsencrypt/live/berabou.me/privkey.pem
+
 apps:
   backup: {}
 
