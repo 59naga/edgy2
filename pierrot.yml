@@ -4,6 +4,11 @@ key: /etc/letsencrypt/live/berabou.me/privkey.pem
 apps:
   backup: {}
 
+  cdn:
+    repo: https://github.com/59naga/cdn.berabou.me.git
+    from: cdn.berabou.me
+    to: 59816
+
   img2svg:
     repo: https://github.com/59naga/img2svg.git
     from: img2svg.berabou.me
