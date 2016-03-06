@@ -4,6 +4,11 @@ key: /etc/letsencrypt/live/berabou.me/privkey.pem
 apps:
   backup: {}
 
+  npm-today:
+    repo: https://github.com/59naga/npm-today.berabou.me.git
+    from: npm-today.berabou.me
+    to: 59817
+
   cdn:
     repo: https://github.com/59naga/cdn.berabou.me.git
     from: cdn.berabou.me
