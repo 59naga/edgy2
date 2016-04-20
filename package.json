@@ -11,6 +11,7 @@
     "backup-clean": "rm apps/edgy.sql"
   },
   "dependencies": {
+    "cors": "^2.7.1",
     "express": "^4.13.1",
     "kuromoji": "^0.0.4",
     "romanizer": "^0.0.1",
