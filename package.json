@@ -18,7 +18,7 @@
     "romanizer": "^0.0.1",
     "soysauce": "^0.1.0",
     "superserver": "^0.0.6",
-    "voice-text": "^0.1.1",
+    "voice-text": "^0.1.2",
     "yahoo-jp": "^0.0.0"
   },
   "extraDependencies": {
