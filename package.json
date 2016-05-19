@@ -14,10 +14,11 @@
     "cors": "^2.7.1",
     "express": "^4.13.1",
     "kuromoji": "^0.0.4",
+    "nipper": "^0.0.0",
     "romanizer": "^0.0.1",
     "soysauce": "^0.1.0",
     "superserver": "^0.0.6",
-    "voice-text": "^0.0.0",
+    "voice-text": "^0.1.0",
     "yahoo-jp": "^0.0.0"
   },
   "extraDependencies": {
