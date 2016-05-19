@@ -11,7 +11,7 @@ schema =
     max: 200,
     default: 'hello'
   speaker:
-    valid: ['hikari', 'haruka', 'takeru', 'santa', 'beer']
+    valid: ['hikari', 'haruka', 'takeru', 'santa', 'bear']
   format:
     valid: ['ogg', 'wav', 'aac']
   emotion:
